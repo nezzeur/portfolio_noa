@@ -1,5 +1,5 @@
 import React, { useEffect, memo, useMemo } from "react"
-import { FileText, Code, Award, Globe, ArrowUpRight, Sparkles, UserCheck } from "lucide-react"
+import {FileText, Code, Award, Globe, ArrowUpRight, Sparkles, UserCheck, GraduationCap} from "lucide-react"
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
@@ -20,9 +20,9 @@ const Header = memo(() => (
       data-aos="zoom-in-up"
       data-aos-duration="800"
     >
-      <Sparkles className="w-5 h-5 text-purple-400" />
-      Transforming ideas into digital experiences
-      <Sparkles className="w-5 h-5 text-purple-400" />
+        {/* <Sparkles className="w-5 h-5 text-purple-400" /> */}
+        {/* <Sparkles className="w-5 h-5 text-purple-400" /> */}
+
     </p>
   </div>
 ));
@@ -155,32 +155,33 @@ const AboutPage = () => {
   }, []);
 
   // Memoized stats data
-  const statsData = useMemo(() => [
-    {
-      icon: Code,
-      color: "from-[#6366f1] to-[#a855f7]",
-      value: totalProjects,
-      label: "Total Projects",
-      description: "Innovative web solutions crafted",
-      animation: "fade-right",
-    },
-    {
-      icon: Award,
-      color: "from-[#a855f7] to-[#6366f1]",
-      value: totalCertificates,
-      label: "Certificates",
-      description: "Professional skills validated",
-      animation: "fade-up",
-    },
-    {
-      icon: Globe,
-      color: "from-[#6366f1] to-[#a855f7]",
-      value: YearExperience,
-      label: "Years of Experience",
-      description: "Continuous learning journey",
-      animation: "fade-left",
-    },
-  ], [totalProjects, totalCertificates, YearExperience]);
+    const statsData = useMemo(() => [
+        {
+            icon: Code,
+            color: "from-[#6366f1] to-[#a855f7]",
+            value: totalProjects,
+            label: "Projets réalisés",
+            description: "Sites et applications développés",
+            animation: "fade-right",
+        },
+        {
+            icon: GraduationCap,
+            color: "from-[#a855f7] to-[#6366f1]",
+            value: "BUT INFO",
+            label: "Formation",
+            description: "Actuellement étudiant en informatique",
+            animation: "fade-up",
+        },
+        {
+            icon: Globe,
+            color: "from-[#6366f1] to-[#a855f7]",
+            value: "2 ans",
+            label: "Parcours académique",
+            description: "En recherche d’une alternance",
+            animation: "fade-left",
+        },
+    ], [totalProjects]);
+
 
   return (
     <div
@@ -205,7 +206,7 @@ const AboutPage = () => {
                 data-aos="fade-right"
                 data-aos-duration="1300"
               >
-                Eki Zulfar Rachman
+                Noa
               </span>
             </h2>
             
@@ -214,7 +215,11 @@ const AboutPage = () => {
               data-aos="fade-right"
               data-aos-duration="1500"
             >
-             Seorang lulusan Teknik Jaringan Komputer dan Telekomunikasi yang memiliki ketertarikan besar dalam pengembangan Front-End. Saya berfokus pada menciptakan pengalaman digital yang menarik dan selalu berusaha memberikan solusi terbaik dalam setiap proyek yang saya kerjakan.
+                Je m'appelle Noa Peru, étudiant en 2ème année de BUT Informatique.
+                Curieux et passionné par le développement, j’aime explorer aussi bien
+                le côté Front-End que le côté Back-End.
+                Mon objectif est de progresser dans ces deux domaines et de développer
+                des projets complets et utiles.
             </p>
 
                {/* Quote Section */}
@@ -235,20 +240,26 @@ const AboutPage = () => {
         </div>
         
         <blockquote className="text-gray-300 text-center lg:text-left italic font-medium text-sm relative z-10 pl-6">
-          "Leveraging AI as a professional tool, not a replacement."
+          "Passionné par le code, curieux de tout explorer."
         </blockquote>
       </div>
 
             <div className="flex flex-col lg:flex-row items-center lg:items-start gap-4 lg:gap-4 lg:px-0 w-full">
-              <a href="https://drive.google.com/drive/folders/1BOm51Grsabb3zj6Xk27K-iRwI1zITcpo" className="w-full lg:w-auto">
-              <button 
-                data-aos="fade-up"
-                data-aos-duration="800"
-                className="w-full lg:w-auto sm:px-6 py-2 sm:py-3 rounded-lg bg-gradient-to-r from-[#6366f1] to-[#a855f7] text-white font-medium transition-all duration-300 hover:scale-105 flex items-center justify-center lg:justify-start gap-2 shadow-lg hover:shadow-xl "
-              >
-                <FileText className="w-4 h-4 sm:w-5 sm:h-5" /> Download CV
-              </button>
-              </a>
+                <a
+                    href="/CvPeruNoa.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full lg:w-auto"
+                >
+                    <button
+                        data-aos="fade-up"
+                        data-aos-duration="800"
+                        className="w-full lg:w-auto sm:px-6 py-2 sm:py-3 rounded-lg bg-gradient-to-r from-[#6366f1] to-[#a855f7] text-white font-medium transition-all duration-300 hover:scale-105 flex items-center justify-center lg:justify-start gap-2 shadow-lg hover:shadow-xl "
+                    >
+                        <FileText className="w-4 h-4 sm:w-5 sm:h-5" /> Download CV
+                    </button>
+                </a>
+
               <a href="#Portofolio" className="w-full lg:w-auto">
               <button 
                 data-aos="fade-up"
