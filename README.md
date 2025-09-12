@@ -33,7 +33,7 @@ Suivez ces étapes pour exécuter le projet sur votre machine :
 
 ```bash
 git clone https://github.com/nezzeur/Portofolio.git
-cd Portofolio_V5
+cd Portofolio
 ```
 
 ### 2. Installer les dépendances
