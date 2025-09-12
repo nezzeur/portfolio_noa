@@ -8,6 +8,7 @@ import Navbar from "./components/Navbar";
 import Portofolio from "./Pages/Portofolio";
 import ProjectDetails from "./components/ProjectDetail";
 import WelcomeScreen from "./Pages/WelcomeScreen";
+import Footer from "./components/Footer";
 import { AnimatePresence } from "framer-motion";
 import NotFoundPage from "./Pages/404";
 
@@ -27,15 +28,7 @@ const LandingPage = ({ showWelcome, setShowWelcome }) => {
                     <Home />
                     <About />
                     <Portofolio />
-                    <footer className="w-full py-6 flex justify-center items-center bg-gray-900">
-            <span className="text-gray-400 text-sm">
-              © 2025{" "}
-                <a href="https://noaperu.fr" className="hover:underline">
-                Noa
-              </a>
-              . Tous droits réservés.
-            </span>
-                    </footer>
+                    <Footer />
                 </>
             )}
         </>
@@ -45,15 +38,7 @@ const LandingPage = ({ showWelcome, setShowWelcome }) => {
 const ProjectPageLayout = () => (
     <>
         <ProjectDetails />
-        <footer className="w-full py-6 flex justify-center items-center bg-gray-900">
-      <span className="text-gray-400 text-sm">
-        © 2025{" "}
-          <a href="https://noaperu.fr" className="hover:underline">
-          Noa
-        </a>
-        . Tous droits réservés.
-      </span>
-        </footer>
+        <Footer />
     </>
 );
 
