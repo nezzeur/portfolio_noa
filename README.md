@@ -31,28 +31,28 @@ Suivez ces étapes pour exécuter le projet sur votre machine :
 
 ### 1. Cloner le dépôt
 
-\`\`\`bash
+```bash
 git clone https://github.com/nezzeur/Portofolio.git
 cd Portofolio_V5
-\`\`\`
+```
 
 ### 2. Installer les dépendances
 
-\`\`\`bash
+```bash
 npm install
-\`\`\`
+```
 
 Si vous rencontrez des problèmes de dépendances :
 
-\`\`\`bash
+```bash
 npm install --legacy-peer-deps
-\`\`\`
+```
 
 ### 3. Démarrer le serveur de développement
 
-\`\`\`bash
+```bash
 npm run dev
-\`\`\`
+```
 
 ### 4. Ouvrir dans le navigateur
 
@@ -62,8 +62,8 @@ Accédez au site via le lien affiché dans votre terminal (généralement http:/
 
 Pour créer un build prêt pour la production :
 
-\`\`\`bash
+```bash
 npm run build
-\`\`\`
+```
 
 Les fichiers seront générés dans le dossier `dist`, prêts à être mis en ligne sur votre serveur ou hébergement.
