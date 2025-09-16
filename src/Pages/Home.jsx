@@ -81,7 +81,7 @@ const WORDS = ["Étudiant en BUT Informatique", "Développeur Backend", "Curieux
 const TECH_STACK = ["Java", "Javascript", "Python", "Git",];
 const SOCIAL_LINKS = [
     { icon: Github, link: "https://github.com/nezzeur" },
-    { icon: Linkedin, link: "https://www.linkedin.com/in/noa-peru-5a0942373/" },
+    { icon: Linkedin, link: "https://www.linkedin.com/in/noa-peru" },
 ];
 
 

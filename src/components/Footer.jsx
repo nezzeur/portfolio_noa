@@ -11,7 +11,7 @@ const Footer = () => {
         },
         {
             icon: Linkedin,
-            link: "https://www.linkedin.com/in/noa-peru-5a0942373/",
+            link: "https://www.linkedin.com/in/noa-peru",
             name: "LinkedIn",
             color: "hover:text-blue-400"
         },
@@ -72,9 +72,6 @@ const Footer = () => {
                         <ExternalLink className="w-4 h-4 text-gray-500" />
                     </div>
                 </div>
-
-
-           
             </div>
         </footer>
     );
