@@ -67,9 +67,6 @@ const Footer = () => {
                             ))}
                         </div>
 
-                        {/* External link indicator */}
-                        <div className="h-4 w-px bg-gray-600 hidden sm:block"></div>
-                        <ExternalLink className="w-4 h-4 text-gray-500" />
                     </div>
                 </div>
             </div>

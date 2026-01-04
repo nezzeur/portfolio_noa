@@ -12,7 +12,7 @@ const Header = memo(() => (
         data-aos="zoom-in-up"
         data-aos-duration="600"
       >
-        About Me
+          À propos
       </h2>
     </div>
     <p 
@@ -199,7 +199,7 @@ const AboutPage = () => {
               data-aos-duration="1000"
             >
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#6366f1] to-[#a855f7]">
-                Hello, I'm
+                Salut, je suis
               </span>
               <span 
                 className="block mt-2 text-gray-200"
@@ -243,7 +243,7 @@ const AboutPage = () => {
           "Passionné par le code, curieux de tout explorer."
         </blockquote>
       </div>
-
+              {/* CV Français */}
             <div className="flex flex-col lg:flex-row items-center lg:items-start gap-4 lg:gap-4 lg:px-0 w-full">
                 <a
                     href="/CvPeruNoa.pdf"
@@ -256,7 +256,24 @@ const AboutPage = () => {
                         data-aos-duration="800"
                         className="w-full lg:w-auto sm:px-6 py-2 sm:py-3 rounded-lg bg-gradient-to-r from-[#6366f1] to-[#a855f7] text-white font-medium transition-all duration-300 hover:scale-105 flex items-center justify-center lg:justify-start gap-2 shadow-lg hover:shadow-xl "
                     >
-                        <FileText className="w-4 h-4 sm:w-5 sm:h-5" /> Download CV
+                        <FileText className="w-4 h-4 sm:w-5 sm:h-5" /> Télécharger CV (FR)
+                    </button>
+                </a>
+
+                {/* CV Anglais */}
+                <a
+                    href="/CvPeruNoaEN.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full lg:w-auto"
+                >
+                    <button
+                        data-aos="fade-up"
+                        data-aos-duration="800"
+                        className="w-full lg:w-auto sm:px-6 py-2 sm:py-3 rounded-lg bg-gradient-to-r from-[#6366f1] to-[#a855f7] text-white font-medium transition-all duration-300 hover:scale-105 flex items-center justify-center lg:justify-start gap-2 shadow-lg hover:shadow-xl"
+                    >
+                        <FileText className="w-4 h-4 sm:w-5 sm:h-5" />
+                        Télécharger CV (EN)
                     </button>
                 </a>
 
@@ -266,7 +283,7 @@ const AboutPage = () => {
                 data-aos-duration="1000"
                 className="w-full lg:w-auto sm:px-6 py-2 sm:py-3 rounded-lg border border-[#a855f7]/50 text-[#a855f7] font-medium transition-all duration-300 hover:scale-105 flex items-center justify-center lg:justify-start gap-2 hover:bg-[#a855f7]/10 "
               >
-                <Code className="w-4 h-4 sm:w-5 sm:h-5" /> View Projects
+                <Code className="w-4 h-4 sm:w-5 sm:h-5" /> Voir Projets
               </button>
               </a>
             </div>
@@ -284,7 +301,7 @@ const AboutPage = () => {
         </a>
       </div>
 
-      <style jsx>{`
+      <style>{`
         @keyframes float {
           0%, 100% { transform: translateY(0); }
           50% { transform: translateY(-20px); }

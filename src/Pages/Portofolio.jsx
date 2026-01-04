@@ -45,7 +45,7 @@ const ToggleButton = ({ onClick, isShowingMore }) => (
     "
     >
     <span className="relative z-10 flex items-center gap-2">
-      {isShowingMore ? "See Less" : "See More"}
+      {isShowingMore ? "Voir Moins" : "Voir Plus"}
         <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
@@ -176,7 +176,7 @@ export default function FullWidthTabs() {
               backgroundClip: 'text',
               WebkitTextFillColor: 'transparent'
           }}>
-            Portfolio Showcase
+            Mes projets
           </span>
                 </h2>
 
@@ -251,12 +251,12 @@ export default function FullWidthTabs() {
                     >
                         <Tab
                             icon={<Code className="mb-2 w-5 h-5 transition-all duration-300" />}
-                            label="Projects"
+                            label="Projets"
                             {...a11yProps(0)}
                         />
                         <Tab
                             icon={<Boxes className="mb-2 w-5 h-5 transition-all duration-300" />}
-                            label="Tech Stack"
+                            label="Technologies"
                             {...a11yProps(1)}
                         />
                     </Tabs>

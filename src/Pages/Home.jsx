@@ -142,21 +142,18 @@ const Home = () => {
   }, [handleTyping]);
 
   // Lottie configuration
-  const lottieOptions = {
-    src: "https://lottie.host/58753882-bb6a-49f5-a2c0-950eda1e135a/NLbpVqGegK.lottie",
-    loop: true,
-    autoplay: true,
-    rendererSettings: {
-      preserveAspectRatio: 'xMidYMid slice',
-      progressiveLoad: true,
-    },
-    style: { width: "100%", height: "100%" },
-    className: `w-full h-full transition-all duration-500 ${
-      isHovering 
-        ? "scale-[180%] sm:scale-[160%] md:scale-[150%] lg:scale-[145%] rotate-2" 
-        : "scale-[175%] sm:scale-[155%] md:scale-[145%] lg:scale-[140%]"
-    }`
-  };
+    const lottieOptions = {
+        src: "https://lottie.host/7798b212-cd0f-4c1a-8df6-273534db02c9/eExutMpI4b.lottie",
+        loop: true,
+        autoplay: true,
+        style: { width: "100%", height: "100%" },
+        className: `w-full h-full transition-all duration-500 ${
+            isHovering
+                ? "scale-[180%] sm:scale-[160%] md:scale-[150%] lg:scale-[145%] rotate-2"
+                : "scale-[175%] sm:scale-[155%] md:scale-[145%] lg:scale-[140%]"
+        }`
+    };
+
 
   return (
     <div className="min-h-screen bg-[#030014] overflow-hidden px-[5%] sm:px-[5%] lg:px-[10%] " id="Home">
@@ -195,7 +192,7 @@ const Home = () => {
 
                 {/* CTA Buttons */}
                 <div className="flex flex-row gap-3 w-full justify-start" data-aos="fade-up" data-aos-delay="1400">
-                  <CTAButton href="#Portofolio" text="Projects" icon={ExternalLink} />
+                  <CTAButton href="#Portofolio" text="Projets" icon={ExternalLink} />
                 </div>
 
                 {/* Social Links */}
