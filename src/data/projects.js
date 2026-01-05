@@ -1,4 +1,5 @@
 import portfolioImage from '../assets/portfolio.png';
+import marathonImage from '../assets/marathon.png';
 import mrsImage from '../assets/mrs.png';
 import bombermanImage from '../assets/bomberman.png';
 import loldleImage from '../assets/loldle.png';
@@ -10,6 +11,26 @@ import puissance4Image from '../assets/puissance4-gameplay.png';
 const projectsData = [
     {
         id: 1,
+        Title: 'Marathon Web - Blog Musical',
+        Description: 'Application web de blog musical développée avec Laravel, permettant de créer et gérer des articles sur la musique avec un lecteur audio intégré.',
+        Img: marathonImage,
+        Github: 'https://github.com/nezzeur/marathon-web',
+        Features: [
+            'Création et gestion d\'articles de blog sur la musique avec système CRUD complet',
+            'Lecteur audio intégré pour chaque article (MP3, WAV)',
+            'Gestion des images de couverture et des médias',
+            'Système d\'utilisateurs avec authentification',
+            'Système de likes, commentaires et suivi d\'utilisateurs',
+            'Interface moderne avec thème Synthwave et animations',
+            'Base de données relationnelle avec migrations Laravel',
+            'Déploiement automatisé via GitLab CI/CD',
+            'Design responsive avec TailwindCSS'
+        ],
+        TechStack: ['PHP', 'Laravel', 'Blade', 'TailwindCSS', 'MySQL', 'Vite', 'JavaScript']
+    },
+
+    {
+        id: 2,
         Title: "Portfolio Website",
         Description: "Un site portfolio personnel pour présenter mes projets et compétences en développement web front-end et back-end. Construit avec React, Tailwind et Flowbite React pour une expérience moderne et responsive.",
         Img: portfolioImage,
@@ -25,7 +46,7 @@ const projectsData = [
         TechStack: ["React", "Tailwind", "Flowbite React", "JavaScript"]
     },
     {
-        id: 2,
+        id: 3,
         Title: "MRS - Menu Resto Semaine",
         Description: "Un site web pour afficher le menu hebdomadaire d’un petit restaurant. Construit avec Hugo, il permet de mettre à jour facilement les menus par semaine et offre une navigation simple et claire pour les clients.",
         Img: mrsImage,
@@ -41,7 +62,7 @@ const projectsData = [
         TechStack: ["Hugo", "HTML", "CSS", "JavaScript"]
     },
     {
-        id: 3,
+        id: 4,
         Title: "Bomberman - Jeu Java/JavaFX",
         Description: "Un jeu Bomberman développé en Java avec JavaFX sous architecture MVC. Permet de gérer les personnages, les explosions et la logique du jeu séparément du rendu graphique.",
         Img: bombermanImage,
@@ -56,7 +77,7 @@ const projectsData = [
         TechStack: ["Java", "JavaFX", "MVC", "OOP"]
     },
     {
-        id: 4,
+        id: 5,
         Title: 'Loldle - Jeu en ligne',
         Description: 'Un jeu de type Wordle où le joueur doit deviner des mots liés à l’univers de League of Legends.',
         Img: loldleImage,
@@ -71,8 +92,9 @@ const projectsData = [
         ],
         TechStack: ['HTML', 'CSS', 'JavaScript']
     },
+
     {
-        id: 5,
+        id: 6,
         Title: "Piano en ligne",
         Description: "Un piano interactif développé en JavaScript permettant de jouer des notes au clavier ou à la souris.",
         Img: pianoImage,
@@ -88,23 +110,22 @@ const projectsData = [
         TechStack: ["HTML", "CSS", "JavaScript"]
     },
     {
-        id: 6,
-        Title: "NCloud - Cloud Personnel",
-        Description: "Une plateforme cloud personnelle permettant de stocker et gérer vos fichiers en ligne. Conçue avec HTML, CSS et JavaScript, elle est hébergée sur Google Cloud Platform (GCP) pour une disponibilité et fiabilité optimales.",
-        Img: ncloudImage,
-        Link: "https://cloud.noaperu.fr/",
-        Github: "https://github.com/nezzeur/NCloud", // si dispo
+        id: 7,
+        Title: "Puissance 4 - Jeu Java/JavaFX",
+        Description: "Un jeu Puissance 4 développé en Java avec JavaFX sous architecture MVC. Permet à deux joueurs de s’affronter en ligne avec une interface graphique fluide et interactive.",
+        Img: puissance4Image,
         Features: [
-            "Stockage et gestion de fichiers en ligne",
-            "Interface intuitive pour upload, téléchargement et organisation",
-            "Compte test disponible : test@test.com / test62",
-            "Hébergement et gestion via Google Cloud Platform (GCP)",
-            "Responsive sur mobile et desktop"
+            "Jeu Puissance 4 pour deux joueurs",
+            "Développé avec Java et JavaFX",
+            "Architecture MVC pour séparer modèle, vue et contrôleur",
+            "Interface graphique interactive et responsive",
+            "Possibilité de jouer en ligne ou en local",
+            "Animations et effets visuels pour une meilleure expérience utilisateur"
         ],
-        TechStack: ["HTML", "CSS", "JavaScript", "GCP"]
+        TechStack: ["Java", "JavaFX", "MVC"]
     },
     {
-        id: 7,
+        id: 8,
         Title: "Minuteur en ligne",
         Description: "Un minuteur développé en JavaScript permettant de régler des compteurs et alertes visuelles et sonores.",
         Img: timerImage,
@@ -119,20 +140,18 @@ const projectsData = [
         TechStack: ["HTML", "CSS", "JavaScript"]
     },
     {
-        id: 8,
-        Title: "Puissance 4 - Jeu Java/JavaFX",
-        Description: "Un jeu Puissance 4 développé en Java avec JavaFX sous architecture MVC. Permet à deux joueurs de s’affronter en ligne avec une interface graphique fluide et interactive.",
-        Img: puissance4Image,
+        id: 9,
+        Title: "NCloud - Cloud Personnel",
+        Description: "Une plateforme cloud personnelle permettant de stocker et gérer vos fichiers en ligne. Conçue avec HTML, CSS et JavaScript, elle est hébergée sur Google Cloud Platform (GCP) pour une disponibilité et fiabilité optimales.",
+        Img: ncloudImage,
         Features: [
-            "Jeu Puissance 4 pour deux joueurs",
-            "Développé avec Java et JavaFX",
-            "Architecture MVC pour séparer modèle, vue et contrôleur",
-            "Interface graphique interactive et responsive",
-            "Possibilité de jouer en ligne ou en local",
-            "Animations et effets visuels pour une meilleure expérience utilisateur"
+            "Stockage et gestion de fichiers en ligne",
+            "Interface intuitive pour upload, téléchargement et organisation",
+            "Hébergement et gestion via Google Cloud Platform (GCP)",
+            "Responsive sur mobile et desktop"
         ],
-        TechStack: ["Java", "JavaFX", "MVC"]
-    }
+        TechStack: ["HTML", "CSS", "JavaScript", "GCP"]
+    },
 
 
 ];

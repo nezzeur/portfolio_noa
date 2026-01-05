@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ExternalLink, ArrowRight } from 'lucide-react';
 
-const CardProject = ({ Img, Title, Description, Link: ProjectLink, id }) => {
+const CardProject = ({ Img, Title, Description, Link: ProjectLink, id, fullDescription }) => {
     // Gère le cas où ProjectLink est vide
     const handleLiveDemo = (e) => {
         if (!ProjectLink) {
@@ -42,13 +42,13 @@ const CardProject = ({ Img, Title, Description, Link: ProjectLink, id }) => {
                             {Title}
                         </h3>
 
-                        <p className="text-gray-300/80 text-sm leading-relaxed line-clamp-2">
+                        <p className={`text-gray-300/80 text-sm leading-relaxed ${fullDescription ? '' : 'line-clamp-2'}`}>
                             {Description}
                         </p>
                     </div>
 
                     <div className="pt-4 flex items-center justify-between mt-auto">
-                        {ProjectLink ? (
+                        {ProjectLink && (
                             <a
                                 href={ProjectLink || "#"}
                                 target="_blank"
@@ -59,8 +59,6 @@ const CardProject = ({ Img, Title, Description, Link: ProjectLink, id }) => {
                                 <span className="text-sm font-medium">Démo</span>
                                 <ExternalLink className="w-4 h-4" />
                             </a>
-                        ) : (
-                            <span className="text-gray-500 text-sm">Démo non disponible</span>
                         )}
 
 

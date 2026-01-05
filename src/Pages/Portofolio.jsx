@@ -101,21 +101,30 @@ function a11yProps(index) {
     };
 }
 
-// techStacks reste inchangé
+// techStacks : langages de programmation d'abord, puis outils/hosting
 const techStacks = [
+    // Langages de programmation
     { icon: "html.svg", language: "HTML" },
     { icon: "css.svg", language: "CSS" },
     { icon: "javascript.svg", language: "JavaScript" },
-    { icon: "tailwind.svg", language: "Tailwind CSS" },
-    { icon: "reactjs.svg", language: "ReactJS" },
-    { icon: "firebase.svg", language: "Firebase" },
-    { icon: "vercel.svg", language: "Vercel" },
     { icon: "java.svg", language: "Java" },
+    { icon: "python.svg", language: "Python" },
+    { icon: "php.svg", language: "PHP" },
+    // Frameworks & Librairies
+    { icon: "reactjs.svg", language: "ReactJS" },
+    { icon: "tailwind.svg", language: "Tailwind CSS" },
+    { icon: "laravel.svg", language: "Laravel" },
+    { icon: "symfony.svg", language: "Symfony" },
+    // Bases de données
+    { icon: "postgresql.svg", language: "PostgreSQL" },
+    { icon: "mysql.svg", language: "MySQL" },
+    // Outils & Hosting
+    { icon: "firebase.svg", language: "Firebase" },
+    { icon: "docker.svg", language: "Docker" },
+    { icon: "vercel.svg", language: "Vercel" },
     { icon: "git.svg", language: "Git" },
     { icon: "github.svg", language: "GitHub" },
-    { icon: "python.svg", language: "Python" },
     { icon: "intellij.svg", language: "IntelliJ IDEA" },
-    { icon: "postgresql.svg", language: "PostgreSQL" },
 ];
 
 export default function FullWidthTabs() {
@@ -282,6 +291,7 @@ export default function FullWidthTabs() {
                                             Description={project.Description}
                                             Link={project.Link}
                                             id={project.id}
+                                            fullDescription={project.id === 9}
                                         />
                                     </div>
                                 ))}
