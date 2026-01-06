@@ -1,27 +1,39 @@
-<?xml version="1.0" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
- "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
-<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
- width="1200.000000pt" height="1200.000000pt" viewBox="0 0 1200.000000 1200.000000"
- preserveAspectRatio="xMidYMid meet">
-
-<g transform="translate(0.000000,1200.000000) scale(0.100000,-0.100000)"
-fill="#000000" stroke="none">
-<path d="M1170 10451 c-310 -850 -700 -1918 -865 -2372 l-301 -826 565 -191
-c812 -275 1550 -526 1669 -568 l102 -36 0 -722 1 -721 -220 -730 c-121 -401
--265 -881 -320 -1065 -139 -466 -834 -2911 -829 -2916 3 -2 823 294 1824 658
-1000 363 1826 661 1834 662 8 0 581 -364 1273 -808 985 -633 1262 -807 1280
--802 29 7 4578 1834 4585 1841 5 5 77 2205 186 5650 20 616 37 1159 38 1206
-l3 86 -1825 1473 c-1004 810 -1843 1488 -1866 1506 l-41 34 -334 -403 c-183
--221 -513 -617 -731 -880 l-397 -478 -650 743 -649 742 -1848 227 c-1016 125
--1864 229 -1884 232 l-37 5 -563 -1547z m3870 -2006 l0 -285 -215 0 -215 0 0
--970 0 -970 215 0 215 0 0 -280 0 -280 -770 0 -770 0 0 280 0 280 220 0 220 0
-0 970 0 970 -220 0 -220 0 0 285 0 285 770 0 770 0 0 -285z m2548 -857 l-3
--1143 -28 -100 c-71 -262 -231 -473 -447 -593 -75 -41 -316 -118 -418 -133
--118 -16 -382 -6 -493 19 -226 53 -426 170 -612 360 l-69 69 212 237 c116 130
-214 236 218 236 4 0 32 -25 62 -56 222 -227 485 -302 692 -198 97 49 151 120
-185 245 16 58 17 157 20 1132 l4 1067 340 0 340 0 -3 -1142z m-1778 -4148 l0
--230 -1390 0 -1390 0 0 223 c0 123 3 227 7 230 3 4 629 7 1390 7 l1383 0 0
--230z"/>
-</g>
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 128 128">
+    <defs>
+        <linearGradient id="deviconIntellij0" x1="11.16" x2="58.94" y1="59.21" y2="56.78" gradientTransform="rotate(.104) scale(1.21905)" gradientUnits="userSpaceOnUse">
+            <stop offset=".09" stop-color="#fc801d"/>
+            <stop offset=".23" stop-color="#b07f61"/>
+            <stop offset=".41" stop-color="#577db3"/>
+            <stop offset=".53" stop-color="#1e7ce6"/>
+            <stop offset=".59" stop-color="#087cfa"/>
+        </linearGradient>
+        <linearGradient id="deviconIntellij1" x1="89.05" x2="73.12" y1="54.12" y2="6.52" gradientTransform="rotate(.104) scale(1.21905)" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#fe2857"/>
+            <stop offset=".08" stop-color="#cb3979"/>
+            <stop offset=".16" stop-color="#9e4997"/>
+            <stop offset=".25" stop-color="#7557b2"/>
+            <stop offset=".34" stop-color="#5362c8"/>
+            <stop offset=".44" stop-color="#386cda"/>
+            <stop offset=".54" stop-color="#2373e8"/>
+            <stop offset=".66" stop-color="#1478f2"/>
+            <stop offset=".79" stop-color="#0b7bf8"/>
+            <stop offset="1" stop-color="#087cfa"/>
+        </linearGradient>
+        <linearGradient id="deviconIntellij2" x1="18.72" x2="78.8" y1="26.61" y2="125.99" gradientTransform="rotate(.104) scale(1.21905)" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#fe2857"/>
+            <stop offset=".08" stop-color="#fe295f"/>
+            <stop offset=".21" stop-color="#ff2d76"/>
+            <stop offset=".3" stop-color="#ff318c"/>
+            <stop offset=".38" stop-color="#ea3896"/>
+            <stop offset=".55" stop-color="#b248ae"/>
+            <stop offset=".79" stop-color="#5a63d6"/>
+            <stop offset="1" stop-color="#087cfa"/>
+        </linearGradient>
+    </defs>
+    <path fill="url(#deviconIntellij0)" d="M23.492 88.027L6.277 74.434L16.41 55.676l15.223 5.094Zm0 0"/>
+    <path fill="#087cfa" d="m121.988 36.68l-2.105 67.78L74.8 122.517l-24.55-15.849Zm0 0"/>
+    <path fill="url(#deviconIntellij1)" d="M121.988 36.68L99.68 58.44L71.035 23.297l14.14-15.899Zm0 0"/>
+    <path fill="url(#deviconIntellij2)" d="m50.25 106.668l-35.852 12.957l7.508-26.293l9.727-32.562L4.96 51.848L21.906 5.484l38.301 4.524L99.68 58.44Zm0 0"/>
+    <path d="M27.43 27.43h73.14v73.14H27.43Zm0 0"/>
+    <path fill="#fff" d="M36.547 86.746h27.43v4.574h-27.43Zm13.691-45.152v-4.996h-13.64v4.996h3.824v17.261h-3.824v5h13.64v-5h-3.816V41.594Zm13.078 22.648a10.802 10.802 0 0 1-5.351-1.219a12.299 12.299 0 0 1-3.559-2.875l3.766-4.207c.687.778 1.484 1.45 2.367 2a4.849 4.849 0 0 0 2.621.73a3.46 3.46 0 0 0 2.668-1.058a5.07 5.07 0 0 0 .977-3.449V36.57h6.093v17.86a12.384 12.384 0 0 1-.668 4.254a7.919 7.919 0 0 1-4.964 4.879a12.097 12.097 0 0 1-4.036.632"/>
 </svg>
